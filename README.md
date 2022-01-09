@@ -1,5 +1,5 @@
 # BaiTapCodeAI
-BFS.py: Thuật toán tìm kiếm theo chiều rộng
+BFS.py: Thuật toán tìm kiếm theo chiều rộng\n
 DFS.py: Thuật toán tìm kiếm theo chiều sâu
 DLS vs DDF.py: Thuật toán tìm kiếm chiều sâu giới hạn và chiều sâu lặp
 best_first_search.py: Thuật toán tìm kiếm tốt nhất
