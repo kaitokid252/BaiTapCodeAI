@@ -16,19 +16,19 @@ def insertLetter(letter, position):                         #Hàm kiểm tra xem
         printBoard(board)
         #hàm kiểm tra thắng thua hoà
         if (checkDraw()):                                   
-            print("Draw!")
+            print("Hoa!")
             exit()
         if checkForWin():
             if letter == 'X':
-                print("Bot wins!")
+                print("May thang!")
                 exit()
             else:
-                print("Player wins!")
+                print("Nguoi choi thang!")
                 exit()
         return
     else:                           #nếu ô chọn đã được đánh thì chọn lại
-        print("Can't insert there!")
-        position = int(input("Please enter new position:  "))
+        print("Khong the danh vao cho nay nua!")
+        position = int(input("Vui long chon lai o moi: "))
         insertLetter(letter, position)
         return
 def checkForWin():                  #kiểm tra các dữ liệu thắng
@@ -75,7 +75,7 @@ def checkDraw():
             return False
     return True
 def playerMove():
-    position = int(input("Enter the position for 'O':  "))
+    position = int(input("Chon vi tri ban muon danh 'O':  "))
     #position = random.randint(1,9)
     insertLetter(player, position)
     return
@@ -123,8 +123,8 @@ board = {1: ' ', 2: ' ', 3: ' ',
          4: ' ', 5: ' ', 6: ' ',
          7: ' ', 8: ' ', 9: ' '}
 printBoard(board)
-print("Computer goes first! Good luck.")
-print("Positions are as follow:")
+print("May tinh danh truoc.")
+print("Co cac vi tri nhu sau:")
 print("1, 2, 3 ")
 print("4, 5, 6 ")
 print("7, 8, 9 ")
